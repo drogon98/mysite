@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="{% static 'fav.png' %}">
+	{% block title %}
+	<title>PixenWeb-{{ title }}</title>
+	{% endblock %}
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Ultra&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+</head>
+
+<body style="display: flex; flex-direction: column;">
+	<header>
+		<div class="brand">
+			<h3>PixenWeb</h3>
+		</div>
+		<ul class="nav-links">
+			<li class="link"><a href="{% url 'home' %}" title="Get started">Get started</a></li>
+			<li class="link"><a href="{% url 'about' %}" title="About">About</a></li>
+			<li class="link"><a href="{% url 'pricing' %}" title="Pricing">Pricing</a></li>
+			<li class="link"><a href="{% url 'contact' %}" title="Contact">Contact</a></li>
+		</ul>
+		<div class="menu">
+			<div class="bar" id="bar1"></div>
+			<div class="bar" id="bar2"></div>
+			<div class="bar" id="bar3"></div>
+		</div>
+	</header>
+	<main style="padding-bottom: 20px; flex: 1 0 auto;">
+		{% block content %}
+
+		{% endblock %}
+	</main>
+	<footer style="flex-shrink: 0;">
+		<div class="cta">
+			<p>Need a website?</p>
+			<a id="cta-button" href="{% url 'contact' %}" title="cta">Let's create you one</a>
+		</div>
+		<div id="vline"></div>
+		<div class="contacts">
+			<p>Contacts</p>
+			<section class="phone"><span class="fas fa-phone mr-2" style="margin-bottom: 0px;"></span>+254 799204524
+			</section>
+			<div class="email"><span class="far fa-envelope mr-2"></span>infopixenweb@gmail.com</div>
+		</div>
+		<div id="vline"></div>
+		<div class="follow">
+			<p>Follow me</p>
+			<div id="icons">
+				<div class="twitter"><a href="#" title="twitter"><span class="fab fa-twitter"
+							style="color: #fff;"></span></a></div>
+				<div class="facebook"><a href="#" title="facebook"><span class="fab fa-facebook-f"
+							style="color: #fff;"></span></a></div>
+				<div class="linkedin"><a href="#" title="linkedin"><span class="fab fa-linkedin-in"
+							style="color: #fff;"></span></a></div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="{% static 'main.js' %}"></script>
+</body>
+
+</html>

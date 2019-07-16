@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<article class="description">
+	<section class="desc-title">
+		<h2 style="margin:20px 0px 10px 0px;">Let's create you a perfect site for your business</h2>
+	</section>
+	<section class="desc-intro">
+		<section style="width:100%">
+			When choosing a developer to create your website, it is very important not only to look at the price, but
+			also the quality of the work you hope to obtain.To know more about how we price your project visit our
+			pricing <a title="pricing" style="color:#008080;" href="{% url 'pricing' %}">page.</a> At pixenweb we take
+			pride in developing high quality
+			websites that are user friendly and provide the functionality that you need. We are the team that is here to
+			take your business to the next level.
+		</section>
+		<br>
+		<section style="width:100%">
+			We would love to hear more about your new project.
+		</section>
+	</section>
+	<br>
+	<br>
+	<section>
+		<h4>Fill out the form below to get started</h4>
+	</section>
+	<section class="desc-form">
+		<form method="post">
+			{% csrf_token %}
+			{{ form|crispy }}
+			<button type="submit" id="submit-btn">Submit</button>
+		</form>
+	</section>
+</article>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+{% if messages %}
+{% for message in messages %}
+<div class="bg-{{ message.tags }} flash-msg" style="margin-top: 10px; text-align: center;">
+	<p>{{ message }}</p>
+</div>
+{% endfor %}
+{% endif %}
+<div class="intro">
+	<h3>Welcome to PixenWeb</h3>
+	<div class="start-img">
+		<img src="/static/s.png">
+	</div>
+	<p class="paragraph"><em>“ We don't just build websites, we build websites that SELL ”</em></p>
+	<div class="readmore">
+		<a class="read-more" href="{% url 'contact' %}" title="learn more">Learn more</a>
+	</div>
+	<h4 style="margin-top: 40px;">Follow me:</h4>
+	<div class="social-icons">
+		<a href="#" title="Facebook"><img src="{% static 'fb.png' %}"></a>
+		<a href="#" title="Twitter"><img src="{% static 'twitter.png' %}"></a>
+		<a href="#" title="LinkedIn"><img src="{% static 'in.png' %}"></a>
+	</div>
+	<div class="cover-image">
+		<div class="cover-image-overlay"></div>
+	</div>
+	<div id="title-s" style="text-align: center; text-decoration: underline;">
+		<h4>Professional web services</h4></a>
+	</div>
+	<div id="services">
+		<div class="service" id="web-dev">
+			<img class="serv-webdev" src="{% static 'w_dev.png' %}" height="120px">
+			<h5><b>Web development</b></h5>
+			<a class="r-link" href="/pricing/#web-development">Read more<span style="font-size: 15px;"> >></span></a>
+		</div>
+		<div class="service" id="resp-web">
+			<img src="{% static 'r.png' %}" height="120px">
+			<h5><b>Responsive design</b></h5>
+			<a class="r-link" href="/pricing/#responsive-design">Read more<span style="font-size: 15px;"> >></span></a>
+		</div>
+		<div class="service" id="web-main">
+			<img src="{% static 'mainte.png' %}" height="120px">
+			<h5><b>Web maintenance</b></h5>
+			<a class="r-link" href="/pricing/#web-maintenance">Read more<span style="font-size: 15px;"> >></span></a>
+		</div>
+		<div class="service" id="seo">
+			<img src="{% static 'mobile.png' %}" height="120px">
+			<h5><b>Mobile apps</b></h5>
+			<a class="r-link" href="/pricing/#mobile-app">Read more<span style="font-size: 15px;"> >></span></a>
+		</div>
+	</div>
+	<div id="title-s" style="margin:50px 0px 20px 0px; text-align: center; text-decoration: underline;">
+		<h4>Recent Work</h4></a>
+	</div>
+	<p><em>“ Here are sample functioning sites that showcase our ability and competency. ”</em></p>
+	<div class="sites">
+		<div class="site">
+			<div class="site-img" id="site1">
+				<img src="{% static 'site1.png' %}" alt="img">
+				<div class="site-info">
+					<p class="site-name">Foodin Restaurant</p>
+					<a class="site-url" href="http://harrison65.pythonanywhere.com" target="_blank" title="site">
+						<p>Visit site</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="site-links">
+		<a href="#">
+			<div class="link"></div>
+		</a>
+		<a href="#" style="display: none;">
+			<div class="link"></div>
+		</a>
+		<a href="#" style="display: none;">
+			<div class=" link"></div>
+		</a>
+	</div>
+	<!-- <div class="reviews" style="min-height: 500px"></div> -->
+</div>
+{% endblock %}

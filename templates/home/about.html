@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+	<title>About Pixenweb</title>
+{% endblock %}
+
+{% block content %}
+<div class="about">
+	<section id="head"><h3>About PixenWeb - Harrison Ndegwa</h3></section>
+	<div class="line" style="height: 1px; background-color: #ccc; width:80%; margin: auto;"></div>
+	<br>
+	<br>
+	<section style="text-align:center;">
+		<img class="profile-img" src="{% static 'prof.jpg' %}" alt="profile">
+	</section>
+	<section style="text-align:center;"><p style="text-align:center;"><em>Harrison Ndegwa-Founder pixenweb</em></p></section>
+	<section style="text-align:left;">
+		<h3>Who am I?</h3>
+	</section>
+	<section class="who-am-i">
+		I am glad that you have taken your time to visit pixenweb. I take this opportunity to briefly introduce myself to you so that you can know the person you entrust to help you achieve your online goals. I am Harrison Ndegwa,a full-stack web developer and the founder of pixenweb. I chose to use my web design and development skills to help businesses achieve their online goals and from that, i earn a living. I offer my services to <b>bloggers, restaurants and to those in ecommerce</b>.
+	</section>
+	<br>
+	<section style="text-align:left;">
+		<h3>Experience</h3>
+		<p> I feel it’s important that you know that I know what I’m doing. I have a deep working knowledge of the various tools I use which allows me to create awesome websites. Below are my web development tools.</p>
+	</section>
+	<section class="experience">
+		<section class="css">
+			<h3>1. CSS</h3><em>(Cascading Style Sheets)</em>This is a styling language used to style the websites so that they my look attractive.
+		</section>
+		<br>
+		<section class="html">
+			<h3>2. HTML</h3><em>(Hypertext Markup Language)</em>This is a markup language for the website. It is the skeleton of the website. It is used in structuring the content of the website. 
+		</section>
+		<br>
+		<section class="javascript">
+			<h3>3. Javascript</h3>Javascript is a scripting language. It adds functionality and interactivity to the webpages. Some cool features in websites like sliders and dropdown menus are powered by javascript and some of its awesome libraries.
+		</section>
+		<br>
+		<section class="python">
+			<h3>4. Python</h3>This is a server side programming language. It makes a website more dynamic. It is used by some of the big names like youtube,instagram and netflix.
+		</section>
+		<br>
+		<section class="postgresql">
+			<h3>5. PostgreSQL</h3>This is one of the best and most used database by most websites. Its vast community support makes it reliable and easier to maintain.
+		</section>
+		<br>
+		<section class="linux">
+			<h3>5. Linux server administration</h3>Linux is the operating system that powers the majority of the web. I work in the Command line to fine tune and monitor what's taking place on the server.
+		</section>
+		<br>
+		<br>
+		<section class="conclusion">
+			In conclusion, as both a full time and full-stack web developer i use my skills to help businesses achieve their online goals. I am looking forward to work with you on your project.
+		</section>
+	</section>
+</div>
+
+{% endblock %}
