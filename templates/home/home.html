@@ -5,7 +5,7 @@
 {% block content %}
 {% if messages %}
 {% for message in messages %}
-<div class="bg-{{ message.tags }} flash-msg" style="margin-top: 10px; text-align: center;">
+<div class="bg-{{ message.tags }} flash-msg" style="margin-top: 10px; text-align: center;opacity:.8; color:#fff;">
 	<p>{{ message }}</p>
 </div>
 {% endfor %}

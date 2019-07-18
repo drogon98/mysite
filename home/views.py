@@ -30,11 +30,11 @@ def contact(request):
             )
             return redirect("home")
         else:
-            return redirect("readmore")
+            return redirect("contact")
     else:
         form = DetailsForm()
         context = {"title": "contact", "form": form}
-        return render(request, "home/read-more.html", context)
+    return render(request, "home/contact.html", context)
 
 
 def pricing(request):
