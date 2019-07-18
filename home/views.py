@@ -33,7 +33,7 @@ def contact(request):
             return redirect("readmore")
     else:
         form = DetailsForm()
-        context = {"title": "read more", "form": form}
+        context = {"title": "contact", "form": form}
         return render(request, "home/read-more.html", context)
 
 

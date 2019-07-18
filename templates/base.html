@@ -39,28 +39,34 @@
 		{% endblock %}
 	</main>
 	<footer style="flex-shrink: 0;">
-		<div class="cta">
-			<p>Need a website?</p>
-			<a id="cta-button" href="{% url 'contact' %}" title="cta">Let's create you one</a>
-		</div>
-		<div id="vline"></div>
-		<div class="contacts">
-			<p>Contacts</p>
-			<section class="phone"><span class="fas fa-phone mr-2" style="margin-bottom: 0px;"></span>+254 799204524
-			</section>
-			<div class="email"><span class="far fa-envelope mr-2"></span>infopixenweb@gmail.com</div>
-		</div>
-		<div id="vline"></div>
-		<div class="follow">
-			<p>Follow me</p>
-			<div id="icons">
-				<div class="twitter"><a href="#" title="twitter"><span class="fab fa-twitter"
-							style="color: #fff;"></span></a></div>
-				<div class="facebook"><a href="#" title="facebook"><span class="fab fa-facebook-f"
-							style="color: #fff;"></span></a></div>
-				<div class="linkedin"><a href="#" title="linkedin"><span class="fab fa-linkedin-in"
-							style="color: #fff;"></span></a></div>
+		<div class="footer-container">
+			<div class="cta">
+				<p style="text-align: center;">Need a website?</p>
+				<a id="cta-button" href="{% url 'contact' %}" title="cta">Let's create you one</a>
 			</div>
+			<div id="vline"></div>
+			<div class="contacts">
+				<p>Contacts</p>
+				<section class="phone"><span class="fas fa-phone mr-2" style="margin-bottom: 0px;"></span>+254 799204524
+				</section>
+				<div class="email"><span class="far fa-envelope mr-2"></span>infopixenweb@gmail.com</div>
+			</div>
+			<div id="vline"></div>
+			<div class="follow">
+				<p>Follow me</p>
+				<div id="icons">
+					<div class="twitter"><a href="#" title="twitter"><span class="fab fa-twitter"
+								style="color: #fff;"></span></a></div>
+					<div class="facebook"><a href="https://www.facebook.com/thepixenweb/?modal=admin_todo_tour"
+							target="_blank" title="facebook"><span class="fab fa-facebook-f"
+								style="color: #fff;"></span></a></div>
+					<div class="linkedin"><a href="#" title="linkedin"><span class="fab fa-linkedin-in"
+								style="color: #fff;"></span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<pre><p style="text-align: center; color:#fff;font-family: inherit;">Copyright &copy 2019 PixenWeb.All Rights Reserved.</p></pre>
 		</div>
 	</footer>
 	<script type="text/javascript" src="{% static 'main.js' %}"></script>
